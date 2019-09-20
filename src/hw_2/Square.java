@@ -1,7 +1,7 @@
 package hw_2;
 
 public class Square implements Shape {
-    private double a; // длина стороны квадрата
+    private final double a; // длина стороны квадрата
 
     public Square(double a) throws IllegalArgumentException {
         if (a <= 0) {
@@ -9,14 +9,6 @@ public class Square implements Shape {
         } else {
             this.a = a;
         }
-    }
-
-    public Square(){
-        this.a = 1;
-    }
-
-    public void setA(double a) {
-        this.a = a;
     }
 
     @Override

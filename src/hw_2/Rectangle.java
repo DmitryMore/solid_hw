@@ -1,7 +1,7 @@
 package hw_2;
 
 public class Rectangle implements Shape {
-    private double a, b; // стороны прямоугольника
+    private final double a, b; // стороны прямоугольника
 
     public Rectangle(double a, double b) throws IllegalArgumentException {
         if (a <= 0 || b <= 0) {
@@ -10,19 +10,6 @@ public class Rectangle implements Shape {
             this.a = a;
             this.b = b;
         }
-    }
-
-    public Rectangle(){
-        this.a = 1;
-        this.b = 1;
-    }
-
-    public void setA(double a) {
-        this.a = a;
-    }
-
-    public void setB(double b) {
-        this.b = b;
     }
 
     @Override
